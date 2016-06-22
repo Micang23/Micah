@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>Assignment</title>
+</head>
+<body>
+	<form>
+		<input type="text"  id="test-id1" onkeyup="change('test-id1')"><br><br>
+		<input type="text"  id="test-id2" onkeyup="change('test-id2')"><br><br>
+		<input type="text"  id="test-id3" onkeyup="change('test-id3')"><br><br>
+		<input type="text"  id="test-id4" onkeyup="change('test-id4')"><br><br>
+		<input type="text"  id="test-id5" onkeyup="change('test-id5')">
+	</form>
+
+	<script type="text/javascript">
+		function change(test){
+			var x = document.getElementById(test);
+			var y = document.getElementsByTagName("INPUT");
+
+			for(var i = 0; i < y.length; i++){
+				y[i].value = x.value;
+			}
+		}
+	</script>
+</body>
+</html>
